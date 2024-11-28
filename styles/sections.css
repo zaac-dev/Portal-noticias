@@ -5,4 +5,17 @@
         object-fit: cover;
         border-radius: 6px;
     }
+
+    .card {
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: "";
+            inset: 0;
+            position: absolute;
+            top: 50%;
+            background: linear-gradient(180deg, transparent 0%, #020617 100%);
+        }
+    }
 }
