@@ -9,6 +9,7 @@ section header {
         gap: 8px;
 
         span{
+            
             background-image: url("../assets/icons/ArrowRight.svg");
             width: 16px;
             height: 16px;
@@ -21,14 +22,17 @@ section header {
 }
 
 #featured {
-    img {
+    grid-area: featured;
 
+    img {
+        cursor: pointer;
         height: 100%;
         object-fit: cover;
         border-radius: 6px;
     }
 
     .card {
+        cursor: pointer;
         position: relative;
         overflow: hidden;
 
@@ -57,19 +61,22 @@ section header {
 }
 
 #weekly {
-
+    grid-area: weekly;
 
     &>div {
         grid-template-columns: repeat(4, 292px);
     }
 
     img {
+        cursor: pointer;
         border-radius: 6px;
         height: 160px;
     }
 
     figure {
+        cursor: pointer;
         position: relative;
+
         .content-tag {
             position: absolute;
             top: 8px;
@@ -80,5 +87,47 @@ section header {
             margin-top: 8px;
             font-weight: 800;
         }
+    }
+
+}
+
+#ai {
+    grid-area: ai;
+
+    img {
+        cursor: pointer;
+        width: 176px;
+        aspect-ratio: 1/1; /*deica a imagem quadrada*/
+        object-fit: cover;
+    }
+
+    h3 {
+        cursor: pointer;
+        margin-block: 8px 4px;
+    }
+
+    p {
+        cursor: pointer;
+    }
+}
+
+aside{
+    cursor: pointer;
+    grid-area: aside;
+}
+
+#more {
+    margin-top: 32px;
+
+    h3 {
+        cursor: pointer;
+        margin-top: 8px;
+    }
+
+    img {
+        cursor: pointer;
+        width: 72px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
     }
 }
