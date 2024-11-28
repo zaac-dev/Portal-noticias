@@ -19,8 +19,8 @@
     }
 }
 
-#secondary {
-    padding-block: 14px;
+#secundary {
+    padding-block: 24px;
     border: solid 1px var(--stroke-color);
     border-inline: none;
     justify-content: space-between;
